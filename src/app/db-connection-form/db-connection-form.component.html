@@ -1,0 +1,23 @@
+<form (ngSubmit)="onSubmit(dbForm)" #dbForm="ngForm">
+  <div>
+    <label for="host">Host:</label>
+    <input id="host" name="host" ngModel required />
+  </div>
+  <div>
+    <label for="port">Port:</label>
+    <input id="port" name="port" ngModel type="number" required />
+  </div>
+  <div>
+    <label for="username">Username:</label>
+    <input id="username" name="username" ngModel required />
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input id="password" name="password" ngModel type="password" required />
+  </div>
+  <div>
+    <label for="database">Database:</label>
+    <input id="database" name="database" ngModel required />
+  </div>
+  <button type="submit">Submit</button>
+</form>
